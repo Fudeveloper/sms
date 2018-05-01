@@ -22,8 +22,9 @@
 	</properties>
 
 	<modules>
-		<module>sms-web</module>
 		<module>sms-dal</module>
+		<module>sms-web</module>
+		<module>sms-mgr</module>
 	</modules>
 
 </project>

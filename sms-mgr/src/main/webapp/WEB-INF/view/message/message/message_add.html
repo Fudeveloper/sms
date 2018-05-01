@@ -1,0 +1,39 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <input type="hidden" id="id" value="">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="短信id" underline="true"/>
+                            <#input id="mobile" name="手机号" underline="true"/>
+                            <#input id="params" name="短信参数" underline="true"/>
+                            <#input id="validateCode" name="短信系统生成的验证码" underline="true"/>
+                            <#input id="templateId" name="模板id" underline="true"/>
+                            <#input id="sendStatus" name="发送状态（0：失败，1：接口调用成功，2：发送成功）"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="validateStatus" name="验证码验证状态（0：未验证，1：已验证）" underline="true"/>
+                            <#input id="failCode" name="短信平台发送失败代码" underline="true"/>
+                            <#input id="bizId" name="短信平台id" underline="true"/>
+                            <#input id="reciveDate" name="收到短信时间" underline="true"/>
+                            <#input id="createDate" name="创建时间" underline="true"/>
+                            <#input id="updateDate" name="更新时间" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="MessageInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="MessageInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/message/message/message_info.js"></script>
+@}
