@@ -14,7 +14,7 @@
 	<groupId>com.cbwleft</groupId>
 	<artifactId>sms-mgr</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 	<name>sms-mgr</name>
 	
 	<properties>
